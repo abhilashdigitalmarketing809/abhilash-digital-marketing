@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abhilash Digital Marketing | Grow Online</title>
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
 :root{--blue:#1458e8;--dark:#10182d;--light:#f5f8ff;--gold:#f5b942}
@@ -15,22 +14,22 @@ img{display:block;width:100%;object-fit:cover}
 header{background:#10182d;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 3px 15px #0002}
 .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px;color:#fff}
-.brand-icon{width:52px;height:52px;border:2px solid var(--gold);border-radius:15px;display:grid;place-items:center;color:var(--gold);font-size:19px;font-weight:900;box-shadow:inset 0 0 14px #f5b94235}
+.brand-icon{width:52px;height:52px;border:2px solid var(--gold);border-radius:15px;display:grid;place-items:center;color:var(--gold);font-size:19px;font-weight:900}
 .brand-name{font-size:17px;font-weight:800;letter-spacing:.5px}
 .brand-name span{display:block;font-size:11px;color:var(--gold);letter-spacing:2px}
-nav{display:flex;gap:22px;flex-wrap:wrap}
+nav{display:flex;gap:18px;flex-wrap:wrap}
 nav a{color:#fff;font-weight:600;font-size:14px}
 nav a:hover{color:var(--gold)}
 .btn{display:inline-block;background:var(--gold);color:#10182d;padding:12px 22px;border-radius:8px;font-weight:800;transition:.2s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px #f5b94245}
+.btn:hover{transform:translateY(-3px)}
 .btn-blue{background:var(--blue);color:white}
-.hero{background:linear-gradient(115deg,#10182d 0%,#172f68 58%,#1458e8 100%);color:white;padding:80px 0}
+.hero{background:linear-gradient(115deg,#10182d,#172f68 58%,#1458e8);color:white;padding:80px 0}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
 .tag{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px}
 .hero h1{font-size:clamp(35px,5vw,60px);line-height:1.12;margin:17px 0}
 .hero h1 span{color:var(--gold)}
 .hero p{color:#e0e8ff;font-size:17px;margin-bottom:25px;max-width:570px}
-.hero-photo{height:370px;border-radius:24px;border:3px solid #ffffff35;box-shadow:0 20px 50px #0005}
+.hero-photo{height:370px;border-radius:24px;border:3px solid #ffffff35}
 .hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
 .btn-outline{border:1px solid #ffffff90;color:white;padding:11px 20px;border-radius:8px;font-weight:bold}
 .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;margin-top:-30px;position:relative}
@@ -42,7 +41,7 @@ nav a:hover{color:var(--gold)}
 .stat:nth-child(5){background:linear-gradient(135deg,#3b82f6,#3944bd)}
 .stat strong{display:block;font-size:38px;line-height:1.2}
 .stat span{font-size:12px;font-weight:600}
-section{padding:75px 0;scroll-margin-top:90px}
+section{padding:75px 0;scroll-margin-top:100px}
 .section-head{text-align:center;margin-bottom:38px}
 .section-head .tag{color:var(--blue)}
 .section-head h2{font-size:clamp(27px,4vw,39px);color:var(--dark);line-height:1.2;margin:9px 0}
@@ -62,7 +61,7 @@ section{padding:75px 0;scroll-margin-top:90px}
 .service p{font-size:13px;color:#ffffffed}
 .about{background:var(--light)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.about-photo{height:390px;border-radius:20px;box-shadow:0 15px 35px #13264b25}
+.about-photo{height:390px;border-radius:20px}
 .about h2{font-size:clamp(28px,4vw,40px);line-height:1.2;color:var(--dark);margin:12px 0 18px}
 .about p{color:#66718a;margin-bottom:15px}
 .checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:22px 0}
@@ -76,7 +75,7 @@ section{padding:75px 0;scroll-margin-top:90px}
 .why-card p{font-size:14px;color:#e4edff}
 .blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .blog-card{border-radius:13px;overflow:hidden;border:1px solid #e8edf5;background:white;box-shadow:0 8px 25px #152b5210;transition:.2s}
-.blog-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px #152b5220}
+.blog-card:hover{transform:translateY(-5px)}
 .blog-card img{height:170px}
 .blog-content{padding:17px}
 .blog-content small{color:var(--blue);font-weight:bold}
@@ -91,6 +90,22 @@ section{padding:75px 0;scroll-margin-top:90px}
 .work-info{padding:18px}
 .work-info h3{margin-bottom:5px;color:var(--dark)}
 .work-info p{font-size:14px;color:#68738b}
+
+/* Product showcase: display only, no orders */
+.products-section{background:#f5f8ff}
+.products-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.product-card{background:white;border:1px solid #e4eaf5;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #152b5210;transition:.2s}
+.product-card:hover{transform:translateY(-4px)}
+.product-card img{height:230px;object-fit:cover}
+.product-info{padding:20px}
+.product-info small{color:#1458e8;font-weight:bold;letter-spacing:.5px}
+.product-info h3{color:#10182d;margin:8px 0}
+.product-info p{color:#68738b;font-size:14px}
+.product-price{font-size:21px;font-weight:800;color:#1458e8;margin:12px 0}
+.product-status{display:inline-block;padding:7px 12px;border-radius:7px;background:#fff3d2;color:#805400;font-size:12px;font-weight:bold}
+.product-notice{margin-top:25px;padding:18px;border-radius:10px;background:white;border:1px solid #e4eaf5;text-align:center;color:#526079}
+.product-notice p{font-size:14px;margin-top:5px}
+
 .contact{background:#10182d;color:white}
 .contact .section-head h2{color:white}
 .contact .section-head p{color:#d3dcf4}
@@ -108,21 +123,23 @@ footer{background:#080e1c;color:#cbd4eb;padding:25px 0;text-align:center}
 footer b{color:var(--gold)}
 footer p{font-size:13px;margin:5px 0}
 .top{position:fixed;right:20px;bottom:20px;width:43px;height:43px;border-radius:50%;background:var(--gold);color:#10182d;display:grid;place-items:center;font-size:22px;font-weight:bold;z-index:99}
+
 @media(max-width:900px){
  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
  .hero-photo{height:300px}
  .services-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
  .blog-grid{grid-template-columns:repeat(2,1fr)}
  .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+ .products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .stats{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:560px){
  .nav{justify-content:center}
- nav{justify-content:center;gap:13px}
+ nav{justify-content:center;gap:12px}
  .nav>.btn{display:none}
  .hero{padding:55px 0}
  .hero-photo{height:240px}
- .services-grid,.why-grid,.blog-grid,.portfolio-grid{grid-template-columns:1fr}
+ .services-grid,.why-grid,.blog-grid,.portfolio-grid,.products-grid{grid-template-columns:1fr}
  .stats{grid-template-columns:repeat(2,1fr)}
  .stat:last-child{grid-column:1/-1}
  section{padding:55px 0}
@@ -131,7 +148,6 @@ footer p{font-size:13px;margin:5px 0}
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -143,6 +159,7 @@ footer p{font-size:13px;margin:5px 0}
 <nav>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
+<a href="#products">Products</a>
 <a href="#about">About</a>
 <a href="#blog">What's Happening</a>
 <a href="#portfolio">Portfolio</a>
@@ -196,6 +213,92 @@ footer p{font-size:13px;margin:5px 0}
 </div>
 </section>
 
+<!-- PRODUCTS DISPLAY ONLY -->
+<section class="products-section" id="products">
+<div class="container">
+<div class="section-head">
+<div class="tag">Product Collection</div>
+<h2>Explore Our Products</h2>
+<p>We are preparing our product collection. Browse these sample categories while our store is being developed.</p>
+</div>
+
+<div class="products-grid">
+<article class="product-card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Sample headphones">
+<div class="product-info">
+<small>ELECTRONICS · SAMPLE</small>
+<h3>Wireless Headphones</h3>
+<p>A sample listing for audio and technology products.</p>
+<div class="product-price">₹799*</div>
+<span class="product-status">Coming Soon</span>
+</div>
+</article>
+
+<article class="product-card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Sample casual T-shirt">
+<div class="product-info">
+<small>FASHION · SAMPLE</small>
+<h3>Casual T-Shirt</h3>
+<p>A sample listing for everyday clothing and fashion.</p>
+<div class="product-price">₹499*</div>
+<span class="product-status">Coming Soon</span>
+</div>
+</article>
+
+<article class="product-card">
+<img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=700&q=80" alt="Sample home decor">
+<div class="product-info">
+<small>HOME · SAMPLE</small>
+<h3>Home Decor</h3>
+<p>A sample listing for home and lifestyle products.</p>
+<div class="product-price">₹599*</div>
+<span class="product-status">Coming Soon</span>
+</div>
+</article>
+
+<article class="product-card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Sample sports shoe">
+<div class="product-info">
+<small>FOOTWEAR · SAMPLE</small>
+<h3>Casual Sports Shoes</h3>
+<p>A sample listing for footwear and daily wear.</p>
+<div class="product-price">₹999*</div>
+<span class="product-status">Coming Soon</span>
+</div>
+</article>
+
+<article class="product-card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Sample wristwatch">
+<div class="product-info">
+<small>ACCESSORIES · SAMPLE</small>
+<h3>Classic Wristwatch</h3>
+<p>A sample listing for watches and accessories.</p>
+<div class="product-price">₹699*</div>
+<span class="product-status">Coming Soon</span>
+</div>
+</article>
+
+<article class="product-card">
+<img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80" alt="Sample stationery">
+<div class="product-info">
+<small>STATIONERY · SAMPLE</small>
+<h3>Notebook & Stationery</h3>
+<p>A sample listing for study and office essentials.</p>
+<div class="product-price">₹199*</div>
+<span class="product-status">Coming Soon</span>
+</div>
+</article>
+</div>
+
+<div class="product-notice">
+<strong>Our Store Is Coming Soon!</strong>
+<p>These products and prices are examples for display only. They are not verified offers and are not available to order.</p>
+<p>Amazon, Flipkart and Meesho selections may be added after product details and permitted links are verified.</p>
+<p>No orders, payments or Cash on Delivery are currently enabled.</p>
+</div>
+</div>
+</section>
+
 <section class="about" id="about">
 <div class="container about-grid">
 <img class="about-photo" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85" alt="Team collaborating on business ideas">
@@ -239,22 +342,10 @@ footer p{font-size:13px;margin:5px 0}
 <p>Explore the latest topics in technology, AI, online business and digital marketing.</p>
 </div>
 <div class="blog-grid">
-<article class="blog-card">
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Digital business analytics">
-<div class="blog-content"><small>BUSINESS GROWTH</small><h3>From Ideas to Online Business Growth</h3><p>Discover how a clear digital strategy can help a business build its online presence.</p><a class="read" href="#contact">Discuss Your Idea ↗</a></div>
-</article>
-<article class="blog-card">
-<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80" alt="Artificial intelligence technology">
-<div class="blog-content"><small>ARTIFICIAL INTELLIGENCE</small><h3>How AI Is Changing Digital Work</h3><p>Learn how emerging AI tools are supporting creativity, planning and productivity.</p><a class="read" href="#contact">Explore More ↗</a></div>
-</article>
-<article class="blog-card">
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Business data and charts">
-<div class="blog-content"><small>MARKETING TRENDS</small><h3>Make Smarter Marketing Decisions</h3><p>Understand the value of analytics, useful content and knowing your audience.</p><a class="read" href="#contact">Explore More ↗</a></div>
-</article>
-<article class="blog-card">
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80" alt="Modern workspace">
-<div class="blog-content"><small>WEB DEVELOPMENT</small><h3>What Makes a Good Website?</h3><p>Discover the importance of clear navigation, readable text and responsive design.</p><a class="read" href="#contact">Explore More ↗</a></div>
-</article>
+<article class="blog-card"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Digital business analytics"><div class="blog-content"><small>BUSINESS GROWTH</small><h3>From Ideas to Online Business Growth</h3><p>Discover how a clear digital strategy can help a business build its online presence.</p><a class="read" href="#contact">Discuss Your Idea ↗</a></div></article>
+<article class="blog-card"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80" alt="Artificial intelligence technology"><div class="blog-content"><small>ARTIFICIAL INTELLIGENCE</small><h3>How AI Is Changing Digital Work</h3><p>Learn how emerging AI tools are supporting creativity, planning and productivity.</p><a class="read" href="#contact">Explore More ↗</a></div></article>
+<article class="blog-card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Business data and charts"><div class="blog-content"><small>MARKETING TRENDS</small><h3>Make Smarter Marketing Decisions</h3><p>Understand the value of analytics, useful content and knowing your audience.</p><a class="read" href="#contact">Explore More ↗</a></div></article>
+<article class="blog-card"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80" alt="Modern workspace"><div class="blog-content"><small>WEB DEVELOPMENT</small><h3>What Makes a Good Website?</h3><p>Discover the importance of clear navigation, readable text and responsive design.</p><a class="read" href="#contact">Explore More ↗</a></div></article>
 </div>
 </div>
 </section>
@@ -316,7 +407,6 @@ footer p{font-size:13px;margin:5px 0}
 <p>© <span id="year"></span> Abhilash Digital Marketing. All rights reserved.</p>
 </div>
 </footer>
-
 <a class="top" href="#home" aria-label="Back to top">↑</a>
 
 <script>
@@ -328,13 +418,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   const email = document.getElementById("email").value.trim();
   const service = document.getElementById("service").value;
   const message = document.getElementById("message").value.trim();
-
   const subject = encodeURIComponent("Website Enquiry - " + service);
   const body = encodeURIComponent(
     "Name: " + name + "\nEmail: " + email +
     "\nService: " + service + "\n\nMessage:\n" + message
   );
-
   window.location.href =
     "mailto:abhilashdigitalmarketing809@gmail.com?subject=" +
     subject + "&body=" + body;
