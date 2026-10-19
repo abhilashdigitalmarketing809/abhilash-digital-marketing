@@ -3,187 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VELORA | Everything You Love</title>
-<meta name="description" content="Discover fashion, gadgets, accessories, gifts and more at VELORA. Our collection is coming soon.">
+<title>VELORA | Online Store</title>
 <style>
-:root{--navy:#10233f;--navy2:#18385e;--gold:#e7b84b;--ink:#202938;--muted:#697386;--bg:#f5f7fb;--line:#e5e9f0;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
-a{color:inherit;text-decoration:none}button,input{font:inherit}
-.top-strip{background:#0a172a;color:#eaf0f8;text-align:center;padding:8px 12px;font-size:12px;letter-spacing:.3px}
-.header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #09172a26}
-.header-main{max-width:1300px;margin:auto;padding:14px 22px;display:flex;align-items:center;gap:22px}
-.brand{display:flex;align-items:center;gap:10px;min-width:210px}
-.logo{width:44px;height:44px;border:2px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-size:25px;font-weight:900;transform:rotate(-3deg)}
-.brand-name{font-size:23px;font-weight:900;letter-spacing:1.5px;line-height:1.05}.brand-name span{color:var(--gold)}
-.brand-tag{font-size:10px;letter-spacing:2px;color:#d7deea;margin-top:5px}
-.search{flex:1;display:flex;background:white;border-radius:8px;overflow:hidden;min-width:120px;border:2px solid transparent}
-.search:focus-within{border-color:var(--gold)}.search input{border:0;outline:0;padding:14px 15px;flex:1;min-width:0;color:#202938}.search button{border:0;background:var(--gold);padding:0 18px;font-weight:bold;cursor:pointer}
-.header-action{font-size:13px;font-weight:bold;white-space:nowrap;color:#fff}.header-action span{display:block;font-size:20px;text-align:center;margin-bottom:3px}
-.nav{display:flex;gap:8px;max-width:1300px;margin:auto;padding:0 22px 12px;overflow:auto}
-.nav button{border:1px solid #ffffff22;background:transparent;color:#eaf0f8;border-radius:20px;padding:8px 15px;white-space:nowrap;cursor:pointer;font-size:13px}
-.nav button:hover,.nav button.active{background:var(--gold);color:#18253a;border-color:var(--gold)}
-main{max-width:1300px;margin:0 auto;padding:20px 20px 50px}
-.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
-.benefit{background:white;border:1px solid var(--line);border-radius:10px;padding:15px;display:flex;align-items:center;gap:12px}.benefit-icon{font-size:26px}.benefit strong{display:block;font-size:14px}.benefit small{color:var(--muted);font-size:12px}
-.hero{background:linear-gradient(110deg,#10233f 0%,#1b426c 65%,#274f77 100%);border-radius:14px;overflow:hidden;color:white;display:grid;grid-template-columns:1.1fr .9fr;min-height:265px;margin-bottom:22px}
-.hero-copy{padding:34px 36px;align-self:center}.eyebrow{display:inline-block;color:var(--gold);font-size:11px;font-weight:bold;letter-spacing:2px;border:1px solid #e7b84b88;padding:7px 10px;border-radius:20px}
-.hero h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:17px 0 12px}.hero h1 span{color:var(--gold)}.hero p{color:#dce6f2;line-height:1.6;margin:0 0 20px;max-width:500px;font-size:14px}
-.hero-buttons{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:7px;padding:12px 17px;font-weight:bold;cursor:pointer}.btn-gold{background:var(--gold);color:#17243a}.btn-outline{background:transparent;border:1px solid #ffffff88;color:white}
-.hero-art{min-height:250px;position:relative;display:grid;place-items:center;padding:20px}
-.hero-art img{width:90%;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 15px 35px #06142b66;opacity:.88}
-.hero-label{position:absolute;right:8%;bottom:20px;background:#10233fee;border:1px solid #e7b84b88;border-radius:9px;padding:12px 16px;color:white;font-size:13px;font-weight:bold}.hero-label small{display:block;color:var(--gold);font-weight:normal;margin-top:4px}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:28px 0 15px}.section-head h2{font-size:22px;margin:0;color:var(--navy)}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.count{font-size:12px;color:var(--muted)}
-.category-row{display:grid;grid-template-columns:repeat(8,minmax(90px,1fr));gap:10px;margin-bottom:24px}
-.category{background:white;border:1px solid var(--line);border-radius:11px;padding:15px 8px;text-align:center;cursor:pointer;transition:.18s;min-width:0}
-.category:hover,.category.active{border-color:var(--gold);box-shadow:0 4px 14px #17243a10;transform:translateY(-2px)}
-.category .emoji{font-size:28px;display:block;margin-bottom:8px}.category strong{font-size:12px;display:block}
-.product-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}
-.product{background:white;border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:transform .18s,box-shadow .18s;min-width:0}
-.product:hover{transform:translateY(-3px);box-shadow:0 9px 24px #10233f12}
-.product-image{position:relative;background:#e9edf4;aspect-ratio:1/1;overflow:hidden}
-.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}.product:hover .product-image img{transform:scale(1.04)}
-.pill{position:absolute;top:9px;left:9px;background:var(--navy);color:white;border-radius:5px;font-size:9px;letter-spacing:.6px;font-weight:bold;padding:6px 7px}
-.product-info{padding:12px}.product-name{font-size:13px;font-weight:bold;line-height:1.35;min-height:34px}.product-category{font-size:11px;color:var(--muted);margin-top:5px}
-.coming{display:flex;align-items:center;justify-content:center;margin-top:11px;background:#fff7e4;border:1px solid #f0d69b;color:#815d0c;border-radius:6px;padding:8px;font-size:10px;font-weight:900;letter-spacing:1px}
-.empty{grid-column:1/-1;background:white;border:1px dashed #cbd3df;padding:35px;text-align:center;border-radius:12px;color:var(--muted)}
-.info-band{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:20px}.info-band h3{margin:0 0 7px;color:var(--navy)}.info-band p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
-footer{background:#0a172a;color:#dbe3ef;padding:30px 20px}.footer-inner{max-width:1300px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font-size:18px;font-weight:900;letter-spacing:1px}.footer-brand span{color:var(--gold)}footer p{font-size:12px;color:#aebbd0;line-height:1.6}footer a{color:var(--gold)}.footer-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:12px}
-@media(max-width:1000px){.category-row{grid-template-columns:repeat(4,minmax(0,1fr))}.product-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.brand{min-width:180px}.brand-name{font-size:19px}.header-main{gap:13px}}
-@media(max-width:700px){.top-strip{font-size:10px}.header-main{padding:12px;gap:10px;flex-wrap:wrap}.brand{min-width:0;flex:1}.logo{width:38px;height:38px;font-size:21px}.brand-name{font-size:18px}.brand-tag{font-size:8px;letter-spacing:1px}.header-action{font-size:11px}.header-action span{font-size:18px}.search{order:3;flex-basis:100%;flex-grow:1}.search input{padding:12px}.search button{padding:0 13px}.nav{padding:0 12px 10px;gap:6px}main{padding:12px 10px 30px}.benefits{gap:7px}.benefit{padding:10px 7px;gap:6px;display:block;text-align:center}.benefit-icon{font-size:21px}.benefit strong{font-size:11px;margin:4px 0}.benefit small{font-size:9px}.hero{grid-template-columns:1fr}.hero-copy{padding:24px 20px 10px}.hero h1{font-size:34px}.hero p{font-size:13px}.hero-art{min-height:175px;padding:12px 20px 20px}.hero-art img{height:155px;width:100%}.hero-label{right:25px;bottom:27px;padding:9px 11px;font-size:11px}.section-head{margin:23px 0 12px}.section-head h2{font-size:19px}.category-row{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.category{padding:12px 4px}.category .emoji{font-size:24px}.category strong{font-size:10px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-info{padding:10px}.product-name{font-size:12px}.info-band{padding:17px;display:block}.info-band .btn{margin-top:12px}}
-@media(min-width:701px) and (max-width:900px){.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#f4f0ff,#fff9ed,#eaf7ff);color:#20213b}
+header{background:linear-gradient(110deg,#111827,#31245f,#582c83);color:white;padding:16px;position:sticky;top:0;z-index:5}
+.brand{color:#ffd166;font-size:29px;font-weight:bold;letter-spacing:4px}
+.tagline{font-size:11px;margin:5px 0 14px;color:#eee}
+.search{display:flex;gap:7px}
+.search input{flex:1;min-width:0;padding:12px;border:0;border-radius:8px}
+button{cursor:pointer}
+.search button,.gold{background:#ffd166;color:#211b39;border:0;padding:12px;border-radius:8px;font-weight:bold}
+nav{display:flex;gap:8px;overflow:auto;margin-top:13px}
+nav button{white-space:nowrap;border:1px solid #ffffff40;background:#ffffff15;color:white;border-radius:22px;padding:8px 12px}
+nav button.active{background:#ffd166;color:#211b39}
+main{max-width:1250px;margin:auto;padding:16px}
+.hero{background:linear-gradient(120deg,#15172e,#392568,#7141a0);color:white;padding:30px 22px;border-radius:20px;margin-bottom:20px}
+.hero h1{font-size:clamp(30px,6vw,52px);margin:0 0 12px}
+.hero h1 span{color:#ffd166}
+.hero p{line-height:1.6;color:#eee}
+.hero button{margin-top:8px}
+h2{font-size:23px;margin:25px 0 14px}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.cat{background:#fff;border:1px solid #e7dff5;border-radius:12px;padding:13px 4px;text-align:center;font-size:12px;font-weight:bold;color:#30234f}
+.cat span{display:block;font-size:25px;margin-bottom:7px}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}
+.filters button{border:1px solid #ddd2f1;background:white;color:#352654;border-radius:20px;padding:8px 11px}
+.filters button.active{background:#392568;color:white}
+.count{font-size:12px;color:#777;margin-bottom:10px}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{background:white;border:1px solid #e8e5ef;border-radius:13px;overflow:hidden;box-shadow:0 5px 15px #20113b0c}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#eee;display:block}
+.info{padding:10px}
+.name{font-size:13px;font-weight:bold;min-height:34px;line-height:1.3}
+.catname{font-size:10px;color:#777;margin-top:5px}
+.price{font-weight:bold;font-size:17px;margin:9px 0;color:#302052}
+.price del{font-size:11px;color:#999;font-weight:normal;margin-left:5px}
+.buy{width:100%;padding:10px 4px;background:linear-gradient(100deg,#34215e,#6636a2);color:white;border:0;border-radius:7px;font-size:11px;font-weight:bold}
+.soon{margin:30px 0;background:linear-gradient(110deg,#15172e,#43266f);color:white;text-align:center;padding:28px 15px;border-radius:18px}
+.soon strong{background:#ffd166;color:#241d3c;border-radius:25px;padding:8px 13px;letter-spacing:2px}
+.soon h2{margin-top:22px}
+.soon p{font-size:13px;line-height:1.6;color:#eee}
+footer{text-align:center;background:#111827;color:#ddd;padding:24px;font-size:12px;line-height:1.8}
+footer b{font-size:23px;color:#ffd166;letter-spacing:3px}
+.modalbg{display:none;position:fixed;inset:0;background:#000a;z-index:10;align-items:center;justify-content:center;padding:12px}
+.modalbg.show{display:flex}
+.modal{background:white;border-radius:16px;padding:20px;width:min(520px,100%);max-height:95vh;overflow:auto}
+.modalhead{display:flex;justify-content:space-between;align-items:center}
+.modalhead h2{margin:0}
+.close{border:0;background:#eee;border-radius:50%;padding:8px 12px;font-size:18px}
+.notice{background:#fff5d9;border:1px solid #f0d58c;padding:12px;border-radius:9px;font-size:12px;line-height:1.5;margin:14px 0}
+.selected{display:flex;gap:12px;align-items:center}
+.selected img{width:75px;height:75px;object-fit:cover;border-radius:9px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+.fields label{font-size:12px;color:#555}
+.fields input{width:100%;padding:10px;border:1px solid #ddd;border-radius:7px;margin-top:5px}
+.full{grid-column:1/-1}
+.payments{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0}
+.payments label{border:1px solid #ddd;padding:12px;border-radius:8px;font-size:12px}
+.disabled{width:100%;padding:13px;background:#e4e1e9;color:#696575;border:0;border-radius:8px;font-weight:bold;cursor:not-allowed}
+.small{font-size:11px;color:#777;line-height:1.5}
+@media(max-width:750px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.categories{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:360px){.categories{grid-template-columns:repeat(2,1fr)}.brand{font-size:24px}}
 </style>
 </head>
 <body>
-<div class="top-strip">WELCOME TO VELORA · OUR COLLECTION IS COMING SOON</div>
-<header class="header">
-  <div class="header-main">
-    <a class="brand" href="#" aria-label="Velora home">
-      <div class="logo">V</div>
-      <div><div class="brand-name">VE<span>LORA</span></div><div class="brand-tag">EVERYTHING YOU LOVE</div></div>
-    </a>
-    <form class="search" id="searchForm">
-      <input id="searchInput" type="search" placeholder="Search by product or category..." aria-label="Search products">
-      <button type="submit">SEARCH</button>
-    </form>
-    <a class="header-action" href="#categories"><span>▦</span>Categories</a>
-    <a class="header-action" href="#products"><span>♡</span>Discover</a>
-  </div>
-  <nav class="nav" id="nav">
-    <button class="active" data-filter="All">All Products</button>
-    <button data-filter="Fashion">Fashion</button><button data-filter="T-Shirts">T-Shirts</button>
-    <button data-filter="Shoes">Shoes</button><button data-filter="Watches">Watches</button>
-    <button data-filter="Toys">Toys</button><button data-filter="Bags">Bags</button>
-    <button data-filter="Mobile Accessories">Mobile Accessories</button><button data-filter="Home Decor">Home Decor</button>
-    <button data-filter="Gifts">Gifts</button>
-  </nav>
+<header>
+  <div class="brand">VELORA</div>
+  <div class="tagline">EVERYTHING YOU LOVE, ALL IN ONE PLACE</div>
+  <form class="search" id="searchForm">
+    <input id="search" placeholder="Search watches, clothes, gifts..." aria-label="Search products">
+    <button type="submit">SEARCH</button>
+  </form>
+  <nav id="nav"></nav>
 </header>
+
 <main>
-  <section class="benefits" aria-label="Store information">
-    <div class="benefit"><span class="benefit-icon">✦</span><div><strong>Curated Collection</strong><small>Many categories, one place</small></div></div>
-    <div class="benefit"><span class="benefit-icon">◈</span><div><strong>New Styles Coming</strong><small>Our collection is in progress</small></div></div>
-    <div class="benefit"><span class="benefit-icon">✓</span><div><strong>Easy to Explore</strong><small>Browse by category</small></div></div>
-  </section>
   <section class="hero">
-    <div class="hero-copy">
-      <span class="eyebrow">YOUR NEW SHOPPING DESTINATION</span>
-      <h1>Find Your Style.<br><span>Love Every Choice.</span></h1>
-      <p>Explore fashion, gadgets, footwear, gifts and everyday essentials — all in one place. Our online collection is coming soon.</p>
-      <div class="hero-buttons"><button class="btn btn-gold" onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">Explore Categories ↓</button><button class="btn btn-outline" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">View Products</button></div>
-    </div>
-    <div class="hero-art">
-      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85" alt="Modern fashion store">
-      <div class="hero-label">VELORA COLLECTION<small>COMING SOON</small></div>
-    </div>
+    <h1>Discover More.<br><span>Love Every Find.</span></h1>
+    <p>Fashion, electronics, home décor, gifts and everyday essentials — explore them all at VELORA.</p>
+    <button class="gold" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">EXPLORE PRODUCTS ↓</button>
   </section>
-  <section id="categories">
-    <div class="section-head"><div><h2>Shop by Category</h2><p>Choose a category to explore the collection</p></div></div>
-    <div class="category-row" id="categoryRow">
-      <button class="category active" data-filter="All"><span class="emoji">▦</span><strong>All Products</strong></button>
-      <button class="category" data-filter="T-Shirts"><span class="emoji">👕</span><strong>T-Shirts</strong></button>
-      <button class="category" data-filter="Fashion"><span class="emoji">👔</span><strong>Shirts & Wear</strong></button>
-      <button class="category" data-filter="Shoes"><span class="emoji">👟</span><strong>Shoes</strong></button>
-      <button class="category" data-filter="Watches"><span class="emoji">⌚</span><strong>Watches</strong></button>
-      <button class="category" data-filter="Toys"><span class="emoji">🧸</span><strong>Toys</strong></button>
-      <button class="category" data-filter="Bags"><span class="emoji">🎒</span><strong>Bags</strong></button>
-      <button class="category" data-filter="Mobile Accessories"><span class="emoji">📱</span><strong>Mobile</strong></button>
-      <button class="category" data-filter="Home Decor"><span class="emoji">🏠</span><strong>Home Decor</strong></button>
-      <button class="category" data-filter="Gifts"><span class="emoji">🎁</span><strong>Gifts</strong></button>
-      <button class="category" data-filter="Beauty"><span class="emoji">🧴</span><strong>Beauty</strong></button>
-      <button class="category" data-filter="Stationery"><span class="emoji">📚</span><strong>Stationery</strong></button>
-    </div>
+
+  <h2>Shop by Category</h2>
+  <div class="categories" id="categories"></div>
+
+  <section id="shop">
+    <h2>Explore Our Products</h2>
+    <div class="count" id="count"></div>
+    <div class="filters" id="filters"></div>
+    <div class="products" id="products"></div>
   </section>
-  <section id="products">
-    <div class="section-head"><div><h2 id="productHeading">Trending Picks</h2><p>Preview collection · Shopping will be available soon</p></div><div class="count" id="productCount">Products</div></div>
-    <div class="product-grid" id="productGrid"></div>
-  </section>
-  <section class="info-band">
-    <div><h3>A new way to discover your favourites.</h3><p>VELORA is getting ready. Browse our preview collection now; products are for display only and orders are not enabled yet.</p></div>
-    <a class="btn btn-gold" href="#categories">Browse Categories</a>
+
+  <section class="soon">
+    <strong>COMING SOON</strong>
+    <h2>VELORA Is Getting Ready!</h2>
+    <p>We are preparing our store for launch.<br>Product prices are samples. Ordering and payments are not available yet.</p>
   </section>
 </main>
+
 <footer>
-  <div class="footer-inner">
-    <div><div class="footer-brand">VE<span>LORA</span></div><p>Everything You Love, All in One Place.<br>Independent shopping brand · Launching soon.</p></div>
-    <div class="footer-links"><a href="#categories">Categories</a><a href="#products">Products</a><a href="mailto:abhilashdigitalmarketing809@gmail.com">Contact</a></div>
-    <p>© <span id="year"></span> VELORA. All rights reserved.</p>
-  </div>
+  <b>VELORA</b><br>
+  Everything You Love, All in One Place.<br>
+  © <span id="year"></span> VELORA · Preview website · No real orders accepted.
 </footer>
+
+<div class="modalbg" id="modalbg">
+  <section class="modal">
+    <div class="modalhead">
+      <h2>Order Preview</h2>
+      <button class="close" id="close" aria-label="Close">×</button>
+    </div>
+    <div class="notice"><b>COMING SOON — DEMO ONLY</b><br>This is a preview of the future checkout page. Do not enter real personal or payment details. Nothing will be ordered, sent or charged.</div>
+    <div class="selected">
+      <img id="chosenImg" alt="">
+      <div><b id="chosenName"></b><p id="chosenPrice"></p></div>
+    </div>
+    <form id="checkout">
+      <div class="fields">
+        <label>Full name<input placeholder="Preview only" autocomplete="off"></label>
+        <label>Mobile number<input placeholder="Preview only" autocomplete="off"></label>
+        <label class="full">Delivery address<input placeholder="Address field preview" autocomplete="off"></label>
+        <label>City<input placeholder="City" autocomplete="off"></label>
+        <label>PIN code<input placeholder="PIN code" autocomplete="off"></label>
+      </div>
+      <h3>Payment method (preview)</h3>
+      <div class="payments">
+        <label><input type="radio" name="pay" checked> Card</label>
+        <label><input type="radio" name="pay"> Cash on Delivery</label>
+        <label><input type="radio" name="pay"> UPI</label>
+        <label><input type="radio" name="pay"> Net Banking</label>
+      </div>
+      <button class="disabled" type="button" disabled>COMING SOON — ORDERING DISABLED</button>
+      <p class="small">This demo does not save or transmit your entries. Clear the fields before closing if you typed anything.</p>
+    </form>
+  </section>
+</div>
+
 <script>
-const products = [
- {name:"Classic Everyday T-Shirt",cat:"T-Shirts",img:"photo-1521572163474-6864f9cf17ab"},
- {name:"Premium Black T-Shirt",cat:"T-Shirts",img:"photo-1503341504253-dff4815485f1"},
- {name:"Casual White T-Shirt",cat:"T-Shirts",img:"photo-1523381210434-271e8be1f52b"},
- {name:"Printed Style T-Shirt",cat:"T-Shirts",img:"photo-1503342217505-b0a15ec3261c"},
- {name:"Casual Check Shirt",cat:"Fashion",img:"photo-1596755094514-f87e34085b2c"},
- {name:"Classic Formal Shirt",cat:"Fashion",img:"photo-1602810318383-e386cc2a3ccf"},
- {name:"Casual Denim Jeans",cat:"Fashion",img:"photo-1542272604-787c3835535d"},
- {name:"Everyday Casual Wear",cat:"Fashion",img:"photo-1515886657613-9f3515b0c78f"},
- {name:"Sporty Running Shoes",cat:"Shoes",img:"photo-1542291026-7eec264c27ff"},
- {name:"Classic White Sneakers",cat:"Shoes",img:"photo-1495555961986-6d4c1ecb7be3"},
- {name:"Everyday Casual Shoes",cat:"Shoes",img:"photo-1549298916-b41d501d3772"},
- {name:"Modern Wrist Watch",cat:"Watches",img:"photo-1524592094714-0f0654e20314"},
- {name:"Classic Watch Style",cat:"Watches",img:"photo-1524805444758-089113d48a6d"},
- {name:"Cute Teddy Bear",cat:"Toys",img:"photo-1559454403-b8fb88521f11"},
- {name:"Colourful Toy Collection",cat:"Toys",img:"photo-1566576912321-d58ddd7a6088"},
- {name:"School Backpack",cat:"Bags",img:"photo-1553062407-98eeb64c6a62"},
- {name:"Everyday Shoulder Bag",cat:"Bags",img:"photo-1548036328-c9fa89d128fa"},
- {name:"Protective Phone Case",cat:"Mobile Accessories",img:"photo-1601593346740-925612772716"},
- {name:"Wireless Earbuds",cat:"Mobile Accessories",img:"photo-1606220945770-b5b6c2c55bf1"},
- {name:"Home Decor Accent",cat:"Home Decor",img:"photo-1600210492486-724fe5c67fb0"},
- {name:"Decorative Table Piece",cat:"Home Decor",img:"photo-1490312278390-ab64016e0aa9"},
- {name:"Gift Box Inspiration",cat:"Gifts",img:"photo-1549465220-1a8b9238cd48"},
- {name:"Gift for Someone Special",cat:"Gifts",img:"photo-1513201099705-a9746e1e201f"},
- {name:"Beauty & Care Essentials",cat:"Beauty",img:"photo-1608248543803-ba4f8c70ae0b"},
- {name:"Daily Care Collection",cat:"Beauty",img:"photo-1556229010-6c3f2c9ca5f8"},
- {name:"Notebook & Stationery",cat:"Stationery",img:"photo-1531346878377-a5be20888e57"},
- {name:"Creative Desk Supplies",cat:"Stationery",img:"photo-1455390582262-044cdele277a"},
- {name:"Comfort Vest & Basics",cat:"Fashion",img:"photo-1618354691373-d851c5c3a990"},
- {name:"Fashion Cap",cat:"Fashion",img:"photo-1588850561407-ed78c282e89b"},
- {name:"Ladies Fashion Style",cat:"Fashion",img:"photo-1483985988355-763728e1935b"}
+const categories=[
+["All Products","✨"],["Fashion","👕"],["Watches","⌚"],["Electronics","🎧"],
+["Chargers & Cables","🔌"],["Footwear","👟"],["Home Decor","🏠"],
+["God Photos & Idols","🙏"],["Toys","🧸"],["Bags","🎒"],
+["Stationery","✏️"],["Gifts","🎁"]
 ];
-const grid=document.getElementById('productGrid');
-const searchInput=document.getElementById('searchInput');
-let currentFilter='All';
-function imageUrl(id){return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=600&q=80`}
+const items=[
+["Classic Analog Watch","Watches",899,1299,"photo-1523275335684-37898b6baf30"],
+["Gold Style Watch","Watches",1199,1799,"photo-1524805444758-089113d48a6d"],
+["Sport Digital Watch","Watches",699,999,"photo-1508685096489-7aacd43bd3b1"],
+["Smartwatch","Watches",1499,2299,"photo-1546868871-7041f2a55e12"],
+["Wireless Headphones","Electronics",1299,1999,"photo-1505740420928-5e560c06d30e"],
+["Wireless Earbuds","Electronics",799,1299,"photo-1606220945770-b5b6c2c55bf1"],
+["Bluetooth Speaker","Electronics",999,1499,"photo-1608043152269-423dbba4e7e1"],
+["Computer Mouse","Electronics",399,599,"photo-1527814050087-3793815479db"],
+["Keyboard","Electronics",699,999,"photo-1587829741301-dc798b83add3"],
+["Phone Stand","Electronics",249,399,"photo-1586953208448-b95a79798f07"],
+["Fast Charger","Chargers & Cables",399,599,"photo-1583394838336-acd977736f90"],
+["USB-C Cable","Chargers & Cables",199,299,"photo-1558618666-fcd25c85cd64"],
+["Multi-Port Charger","Chargers & Cables",549,799,"photo-1609091839311-d5365f9ff1c5"],
+["Power Bank","Chargers & Cables",899,1299,"photo-1609592424841-4d6b3c8c7e13"],
+["Cotton T-Shirt","Fashion",399,599,"photo-1521572163474-6864f9cf17ab"],
+["Denim Jacket","Fashion",1299,1899,"photo-1543076447-215ad9ba6923"],
+["Printed Kurta","Fashion",799,1199,"photo-1597983073493-88cd35cf93d0"],
+["Casual Shirt","Fashion",699,999,"photo-1596755094514-f87e34085b2c"],
+["Everyday Backpack","Bags",799,1199,"photo-1553062407-98eeb64c6a62"],
+["Classic Handbag","Bags",999,1499,"photo-1584917865442-de89df76afd3"],
+["Travel Bag","Bags",1199,1699,"photo-1553062407-98eeb64c6a62"],
+["Canvas Tote Bag","Bags",299,499,"photo-1544816155-12df9643f363"],
+["Casual Sneakers","Footwear",1099,1599,"photo-1542291026-7eec264c27ff"],
+["Running Shoes","Footwear",1399,1999,"photo-1460353581641-37baddab0fa2"],
+["Comfort Sandals","Footwear",499,799,"photo-1603487742131-4160ec999306"],
+["Classic Flats","Footwear",599,899,"photo-1543163521-1bf539c55dd2"],
+["Decorative Table Lamp","Home Decor",899,1299,"photo-1507473885765-e6ed057f782c"],
+["Cushion Covers","Home Decor",399,699,"photo-1584100936595-c0654b55a2e2"],
+["Artificial Plant","Home Decor",299,499,"photo-1485955900006-10f4d324d411"],
+["Wall Art","Home Decor",499,799,"photo-1577083552431-6e5fd01aa342"],
+["Decorative Vase","Home Decor",599,899,"photo-1578500494198-246f612d3b3d"],
+["Fairy Lights","Home Decor",249,399,"photo-1513506003901-1e6a229e2d15"],
+["Storage Organizer","Home Decor",349,549,"photo-1558997519-83ea9252edf8"],
+["Decorative Buddha Figurine","God Photos & Idols",499,799,"photo-1603006905003-be475563bc59"],
+["Prayer Diya","God Photos & Idols",249,399,"photo-1606293926075-69a00dbfde81"],
+["Framed Spiritual Artwork","God Photos & Idols",599,999,"photo-1579783902614-a3fb3927b6a5"],
+["Decorative Puja Thali","God Photos & Idols",449,699,"photo-1602874801007-bd458bb1b8b6"],
+["Soft Teddy Bear","Toys",499,799,"photo-1559454403-b8fb88521f11"],
+["Building Blocks","Toys",699,999,"photo-1587654780291-39c9404d746b"],
+["Toy Car Set","Toys",349,549,"photo-1594787318286-3d835c1d207f"],
+["Colour Puzzle","Toys",299,499,"photo-1606503153255-59d8b8b821c7"],
+["Notebook Set","Stationery",199,299,"photo-1531346878377-a5be20888e57"],
+["Premium Pen Set","Stationery",249,399,"photo-1455390582262-044cdead277a"],
+["Desk Organizer","Stationery",349,549,"photo-1498050108023-c5249f4df085"],
+["Art & Colour Kit","Stationery",399,599,"photo-1513364776144-60967b0f800f"],
+["Gift Box","Gifts",399,699,"photo-1513201099705-a9746e1e201f"],
+["Scented Candle","Gifts",349,549,"photo-1603006905003-be475563bc59"],
+["Photo Frame","Gifts",299,499,"photo-1513519245088-0e12902e5a38"],
+["Greeting Card Pack","Gifts",149,249,"photo-1513883049090-d0b7439799bf"],
+["Water Bottle","Home Decor",299,499,"photo-1602143407151-7111542de6e8"],
+["Lunch Box","Home Decor",349,549,"photo-1585238342024-78d387f4a707"],
+["Sunglasses","Fashion",399,699,"photo-1511499767150-a48a237f0083"],
+["Everyday Cap","Fashion",249,399,"photo-1521369909029-2afed882baee"],
+["Winter Scarf","Fashion",299,499,"photo-1520903920243-00d872a2d1c9"],
+["Travel Wallet","Bags",349,549,"photo-1627123424574-724758594e93"],
+["Laptop Sleeve","Bags",499,799,"photo-1496181133206-80ce9b88a853"],
+["Desk Clock","Home Decor",499,799,"photo-1508057198894-247b23fe5ade"],
+["Photo Album","Gifts",299,449,"photo-1517841905240-472988babdf9"],
+["Kids Drawing Board","Toys",599,899,"photo-1513364776144-60967b0f800f"],
+["Decorative Basket","Home Decor",399,649,"photo-1595428774223-ef52624120d2"],
+["Wireless Charging Pad","Chargers & Cables",599,899,"photo-1586953208448-b95a79798f07"],
+["Travel Adapter","Chargers & Cables",449,699,"photo-1558618666-fcd25c85cd64"],
+["Everyday Slippers","Footwear",249,399,"photo-1603487742131-4160ec999306"],
+["Crossbody Bag","Bags",699,999,"photo-1584917865442-de89df76afd3"]
+];
+let active="All Products",searchText="";
+const image=id=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=500&q=80`;
+function chooseCategory(name){active=name;render();document.getElementById("shop").scrollIntoView({behavior:"smooth"})}
 function render(){
- const query=searchInput.value.trim().toLowerCase();
- const filtered=products.filter(p=>(currentFilter==='All'||(currentFilter==='Fashion' ? p.cat==='Fashion'||p.cat==='T-Shirts' : p.cat===currentFilter)) && (!query||(p.name+' '+p.cat).toLowerCase().includes(query)));
- document.getElementById('productHeading').textContent=query?'Search Results':currentFilter==='All'?'Trending Picks':currentFilter;
- document.getElementById('productCount').textContent=filtered.length+' items';
- grid.innerHTML='';
- if(!filtered.length){grid.innerHTML='<div class="empty">No matching products found. Try another search or category.</div>';return}
- filtered.forEach(p=>{
-  const card=document.createElement('article');card.className='product';
-  card.innerHTML=`<div class="product-image"><img loading="lazy" src="${imageUrl(p.img)}" alt="${p.name}" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#e9edf4,#cbd5e1)'"><span class="pill">PREVIEW</span></div><div class="product-info"><div class="product-name">${p.name}</div><div class="product-category">${p.cat}</div><div class="coming">COMING SOON</div></div>`;
-  grid.appendChild(card);
- });
- document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter===currentFilter));
+ document.getElementById("nav").innerHTML=categories.map(c=>`<button class="${c[0]===active?'active':''}" data-cat="${c[0]}">${c[1]} ${c[0]}</button>`).join("");
+ document.getElementById("categories").innerHTML=categories.slice(1).map(c=>`<button class="cat" data-cat="${c[0]}"><span>${c[1]}</span>${c[0]}</button>`).join("");
+ document.getElementById("filters").innerHTML=categories.map(c=>`<button class="${c[0]===active?'active':''}" data-cat="${c[0]}">${c[0]}</button>`).join("");
+ document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>chooseCategory(b.dataset.cat));
+ const list=items.map((p,i)=>({p,i})).filter(o=>(active==="All Products"||o.p[1]===active)&&o.p[0].toLowerCase().includes(searchText.toLowerCase())||false);
+ // Also allow searching by category name.
+ const visible=items.map((p,i)=>({p,i})).filter(o=>(active==="All Products"||o.p[1]===active)&&(!searchText||(o.p[0]+" "+o.p[1]).toLowerCase().includes(searchText.toLowerCase())));
+ document.getElementById("count").textContent=visible.length+" products · sample prices";
+ document.getElementById("products").innerHTML=visible.length?visible.map(o=>{const p=o.p;return `<article class="card"><img loading="lazy" src="${image(p[4])}" alt="${p[0]}" onerror="this.onerror=null;this.src='https://placehold.co/400x400/eee8ff/302052?text=VELORA'"><div class="info"><div class="name">${p[0]}</div><div class="catname">${p[1]}</div><div class="price">₹${p[2]} <del>₹${p[3]}</del></div><button class="buy" data-buy="${o.i}">BUY NOW · COMING SOON</button></div></article>`}).join(""):'<p>No products found. Try another search.</p>';
+ document.querySelectorAll("[data-buy]").forEach(b=>b.onclick=()=>openOrder(items[Number(b.dataset.buy)]));
 }
-function setFilter(filter){currentFilter=filter;searchInput.value='';render();document.getElementById('products').scrollIntoView({behavior:'smooth',block:'start'})}
-document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
-document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();currentFilter='All';render();document.getElementById('products').scrollIntoView({behavior:'smooth'})});
-searchInput.addEventListener('input',()=>{currentFilter='All';render()});
-document.getElementById('year').textContent=new Date().getFullYear();
+function openOrder(p){
+ document.getElementById("chosenImg").src=image(p[4]);document.getElementById("chosenName").textContent=p[0];document.getElementById("chosenPrice").textContent="Sample price: ₹"+p[2];
+ document.getElementById("modalbg").classList.add("show");document.body.style.overflow="hidden";
+}
+function closeOrder(){document.getElementById("modalbg").classList.remove("show");document.getElementById("checkout").reset();document.body.style.overflow=""}
+document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();searchText=document.getElementById("search").value.trim();render()});
+document.getElementById("search").addEventListener("input",e=>{searchText=e.target.value.trim();render()});
+document.getElementById("close").onclick=closeOrder;
+document.getElementById("modalbg").addEventListener("click",e=>{if(e.target.id==="modalbg")closeOrder()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeOrder()});
+document.getElementById("year").textContent=new Date().getFullYear();
 render();
 </script>
 </body>
