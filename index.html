@@ -3,410 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhilash Digital Marketing | Official Website</title>
-<meta name="description" content="Abhilash Digital Marketing — digital services and an upcoming product showcase.">
+<title>VELORA | Everything You Love</title>
+<meta name="description" content="Discover fashion, gadgets, accessories, gifts and more at VELORA. Our collection is coming soon.">
 <style>
-:root{
-  --navy:#071326;--navy2:#0c2040;--gold:#e9bd62;
-  --goldlight:#ffe4a0;--cream:#fff8e9;--muted:#b9c6d9;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font-family:Arial,Helvetica,sans-serif;background:#081426;color:#f7f8fb;line-height:1.65}
-a{text-decoration:none;color:inherit}
-button{font:inherit}
-header{position:sticky;top:0;z-index:50;background:#071326f5;border-bottom:1px solid #dcb35a55;backdrop-filter:blur(12px)}
-.nav-wrap{max-width:1400px;margin:auto;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;min-width:0}
-.brand-logo{width:66px;height:66px;flex-shrink:0;filter:drop-shadow(0 0 10px #e9bd6240)}
-.brand-name{font-weight:900;letter-spacing:1px;font-size:clamp(14px,2vw,21px);line-height:1.25;color:#fff}
-.brand-name span{color:var(--gold)}
-.brand-tag{font-size:10px;letter-spacing:3px;color:var(--goldlight);margin-top:5px}
-nav{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex-wrap:wrap}
-nav a{font-size:13px;color:#edf2fb;transition:.2s}
-nav a:hover{color:var(--gold)}
-.nav-cta{padding:9px 14px;border:1px solid var(--gold);border-radius:6px;color:var(--gold)}
-.hero{min-height:calc(100svh - 90px);display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 48%,#173c62 0%,#0c2040 32%,#071326 72%)}
-.hero:before{content:"";position:absolute;width:540px;height:540px;border:1px solid #e9bd6220;border-radius:50%;right:-130px;top:8%;box-shadow:0 0 0 55px #e9bd6208,0 0 0 110px #e9bd6206}
-.hero-wrap{position:relative;z-index:2;width:100%;max-width:1400px;margin:auto;padding:70px 7%;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid #e9bd6255;background:#e9bd6210;color:var(--goldlight);padding:8px 14px;border-radius:30px;font-size:11px;letter-spacing:2px;font-weight:bold}
-.eyebrow:before{content:"";width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 12px var(--gold)}
-.hero h1{font-size:clamp(42px,6vw,78px);line-height:1.06;letter-spacing:-2px;margin:25px 0 20px;font-weight:900}
-.hero h1 span{color:var(--gold);display:block}
-.hero-copy{max-width:620px;color:#c3d0e2;font-size:17px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 22px;border-radius:7px;font-weight:bold;font-size:14px;transition:.2s;border:1px solid transparent}
-.btn-gold{background:linear-gradient(135deg,#ffe4a0,#d6a13e);color:#101a2b;box-shadow:0 7px 28px #dca94225}
-.btn-gold:hover{transform:translateY(-2px)}
-.btn-ghost{border-color:#a9b9d155;color:white}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.hero-note{margin-top:25px;font-size:12px;color:#9eafc6}
-.hero-visual{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center}
-.visual-glow{position:absolute;width:320px;height:320px;border-radius:50%;background:#d9a84316;filter:blur(35px)}
-.laptop-scene{position:relative;width:100%;max-width:540px;transform:perspective(900px) rotateY(-5deg)}
-.laptop-screen{position:relative;border:7px solid #26344a;border-bottom-width:10px;border-radius:13px 13px 4px 4px;background:#081326;aspect-ratio:1.42;overflow:hidden;box-shadow:0 0 0 1px #e9bd6235,0 24px 65px #0008}
-.laptop-screen img{width:100%;height:100%;object-fit:cover;display:block;opacity:.78}
-.screen-overlay{position:absolute;inset:0;background:linear-gradient(135deg,#07132640,#0b224780);display:flex;align-items:center;justify-content:center;text-align:center}
-.screen-brand{padding:20px}
-.screen-brand svg{width:78px;height:78px}
-.screen-brand strong{display:block;font-size:clamp(17px,2vw,25px);letter-spacing:1px;color:white;line-height:1.25;margin-top:8px}
-.screen-brand small{display:block;color:var(--gold);letter-spacing:3px;margin-top:9px;font-size:10px}
-.laptop-base{height:15px;background:linear-gradient(#b7c2cf,#596679 45%,#303b4a);margin:0 -5%;border-radius:2px 2px 45% 45%;box-shadow:0 15px 20px #0006}
-.laptop-base:after{content:"";display:block;width:24%;height:5px;background:#344254;margin:auto;border-radius:0 0 8px 8px}
-.float-card{position:absolute;right:-3%;bottom:8%;background:#0c1c32ed;border:1px solid #e9bd6266;border-radius:12px;padding:16px 20px;box-shadow:0 15px 35px #0006}
-.float-card strong{display:block;color:var(--goldlight);font-size:15px}
-.float-card small{color:#c3d0e2;font-size:11px}
-.hero-mark{position:absolute;left:0;bottom:5%;font-size:clamp(60px,11vw,160px);font-weight:900;color:#ffffff04;letter-spacing:-7px;pointer-events:none}
-.section{padding:85px 6%;position:relative}
-.section-inner{max-width:1280px;margin:auto}
-.section-dark{background:#0a192e}
-.section-light{background:#101f35}
-.section-heading{text-align:center;margin-bottom:38px}
-.kicker{font-size:11px;color:var(--gold);letter-spacing:3px;font-weight:bold}
-.section-heading h2{font-size:clamp(30px,4vw,45px);line-height:1.2;margin:10px 0;color:#fff}
-.section-heading p{max-width:740px;margin:auto;color:#afbdd0}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:-1px auto 0;padding:0 6% 25px;background:#071326}
-.stat{border:1px solid #e9bd6230;border-radius:10px;padding:23px;text-align:center;background:linear-gradient(140deg,#10243d,#0a1729)}
-.stat strong{display:block;font-size:24px;color:var(--gold)}
-.stat span{font-size:12px;color:#b9c6d9}
-.service-grid,.feature-grid,.product-grid,.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.service-card{background:linear-gradient(145deg,#10243d,#0b192d);border:1px solid #d5ad5c25;border-radius:13px;padding:27px;transition:.25s}
-.service-card:hover{transform:translateY(-5px);border-color:#e9bd6280}
-.service-icon{font-size:31px}
-.service-card h3{color:var(--goldlight);margin:13px 0 8px;font-size:19px}
-.service-card p{color:#b8c6d9;font-size:14px}
-.products{background:linear-gradient(180deg,#101f35,#09172a)}
-.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:30px 0}
-.filter-btn{cursor:pointer;background:#0a192e;border:1px solid #43526a;color:#dbe4f1;padding:9px 14px;border-radius:24px;font-size:12px;transition:.2s}
-.filter-btn:hover,.filter-btn.active{background:linear-gradient(135deg,#ffe4a0,#d6a13e);color:#101a2b;border-color:#e9bd62;font-weight:bold}
-.product-grid{align-items:stretch}
-.product-card{background:#0a1729;border:1px solid #e9bd6230;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.25s}
-.product-card:hover{transform:translateY(-4px);border-color:#e9bd6280;box-shadow:0 12px 28px #0003}
-.product-card[hidden]{display:none}
-.product-image-wrap{height:220px;position:relative;background:#13243b;overflow:hidden}
-.product-image{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
-.product-card:hover .product-image{transform:scale(1.04)}
-.image-label{position:absolute;left:12px;top:12px;background:#071326e8;border:1px solid #e9bd6270;color:var(--goldlight);border-radius:5px;padding:5px 9px;font-size:10px;font-weight:bold;letter-spacing:1px}
-.product-info{padding:17px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;flex:1}
-.product-info h3{font-size:18px;color:#fff;line-height:1.3}
-.product-info p{font-size:13px;color:#afbdd0}
-.coming{display:inline-block;margin-top:auto;padding:6px 11px;background:#e9bd6215;border:1px solid #e9bd6270;border-radius:5px;color:var(--goldlight);font-size:10px;font-weight:900;letter-spacing:1.4px}
-.variants{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
-.variants span{font-size:11px;color:#d6dfeb;border:1px solid #46546a;padding:3px 8px;border-radius:5px}
-.product-notice{margin:30px auto 0;max-width:850px;padding:20px;text-align:center;border:1px dashed #e9bd6270;border-radius:10px;background:#e9bd620b;color:#c7d2e2;font-size:14px}
-.product-notice strong{color:var(--goldlight)}
-.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.about-art{min-height:320px;border:1px solid #e9bd6240;border-radius:16px;background:radial-gradient(circle at center,#1e3c5c,#0a1729 70%);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
-.about-art svg{width:120px;height:120px}
-.about-art strong{display:block;font-size:24px;color:#fff;margin-top:15px}
-.about-art small{color:var(--gold);letter-spacing:3px}
-.about-copy h2{font-size:clamp(30px,4vw,43px);line-height:1.2;margin:10px 0 18px}
-.about-copy h2 span{color:var(--gold)}
-.about-copy p{color:#b9c6d9;margin:12px 0}
-.feature-card{border:1px solid #e9bd6230;border-radius:12px;padding:23px;background:#0b1a2e}
-.feature-card h3{color:var(--goldlight);margin:10px 0}
-.feature-card p{font-size:14px;color:#b9c6d9}
-.project-card{padding:25px;border:1px solid #e9bd6230;border-radius:12px;background:#0b1a2e}
-.project-card h3{color:var(--goldlight);margin-bottom:8px}
-.project-card p{color:#b9c6d9;font-size:14px}
-.contact{background:radial-gradient(ellipse at top,#183452,#071326 70%)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:950px;margin:auto}
-.contact-card{padding:28px;border:1px solid #e9bd6240;border-radius:13px;background:#0b1a2edb}
-.contact-card h3{font-size:21px;color:var(--goldlight);margin-bottom:14px}
-.contact-card p{color:#c0cde0;margin:11px 0;overflow-wrap:anywhere}
-.contact-card a:not(.btn){color:var(--goldlight)}
-footer{padding:36px 6%;background:#040b16;border-top:1px solid #e9bd6230;text-align:center}
-.footer-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:15px}
-footer p{font-size:12px;color:#95a6bc;margin:5px}
-footer .brand-name{font-size:15px}
-footer .brand-tag{font-size:9px}
-@media(min-width:1500px){.hero-wrap{padding-top:100px;padding-bottom:100px}.hero-visual{min-height:540px}.laptop-scene{max-width:630px}}
-@media(max-width:950px){
- .nav-wrap{flex-direction:column;gap:12px}
- nav{justify-content:center}
- .hero-wrap{grid-template-columns:1fr;text-align:center;padding:60px 6%}
- .hero-copy{margin:auto}
- .hero-actions{justify-content:center}
- .hero-visual{min-height:370px;max-width:600px;width:100%;margin:10px auto 0}
- .service-grid,.feature-grid,.product-grid,.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
- .about-layout{grid-template-columns:1fr}
- .about-art{min-height:260px}
-}
-@media(max-width:560px){
- .nav-wrap{padding:10px 4%}
- .brand-logo{width:54px;height:54px}
- .brand-name{font-size:13px;letter-spacing:.4px}
- .brand-tag{font-size:8px;letter-spacing:2px}
- nav{gap:10px}
- nav a{font-size:12px}
- .hero{min-height:auto}
- .hero-wrap{padding:65px 5% 45px}
- .hero h1{font-size:44px;letter-spacing:-1.5px}
- .hero-copy{font-size:15px}
- .hero-visual{min-height:270px}
- .laptop-base{height:10px}
- .float-card{right:-1%;bottom:4%;padding:10px 13px}
- .float-card strong{font-size:12px}
- .float-card small{font-size:9px}
- .section{padding:58px 5%}
- .stats{padding-left:5%;padding-right:5%;grid-template-columns:1fr}
- .service-grid,.feature-grid,.product-grid,.project-grid,.contact-grid{grid-template-columns:1fr}
- .product-image-wrap{height:250px}
- .section-heading{margin-bottom:28px}
-}
+:root{--navy:#10233f;--navy2:#18385e;--gold:#e7b84b;--ink:#202938;--muted:#697386;--bg:#f5f7fb;--line:#e5e9f0;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:inherit;text-decoration:none}button,input{font:inherit}
+.top-strip{background:#0a172a;color:#eaf0f8;text-align:center;padding:8px 12px;font-size:12px;letter-spacing:.3px}
+.header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #09172a26}
+.header-main{max-width:1300px;margin:auto;padding:14px 22px;display:flex;align-items:center;gap:22px}
+.brand{display:flex;align-items:center;gap:10px;min-width:210px}
+.logo{width:44px;height:44px;border:2px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-size:25px;font-weight:900;transform:rotate(-3deg)}
+.brand-name{font-size:23px;font-weight:900;letter-spacing:1.5px;line-height:1.05}.brand-name span{color:var(--gold)}
+.brand-tag{font-size:10px;letter-spacing:2px;color:#d7deea;margin-top:5px}
+.search{flex:1;display:flex;background:white;border-radius:8px;overflow:hidden;min-width:120px;border:2px solid transparent}
+.search:focus-within{border-color:var(--gold)}.search input{border:0;outline:0;padding:14px 15px;flex:1;min-width:0;color:#202938}.search button{border:0;background:var(--gold);padding:0 18px;font-weight:bold;cursor:pointer}
+.header-action{font-size:13px;font-weight:bold;white-space:nowrap;color:#fff}.header-action span{display:block;font-size:20px;text-align:center;margin-bottom:3px}
+.nav{display:flex;gap:8px;max-width:1300px;margin:auto;padding:0 22px 12px;overflow:auto}
+.nav button{border:1px solid #ffffff22;background:transparent;color:#eaf0f8;border-radius:20px;padding:8px 15px;white-space:nowrap;cursor:pointer;font-size:13px}
+.nav button:hover,.nav button.active{background:var(--gold);color:#18253a;border-color:var(--gold)}
+main{max-width:1300px;margin:0 auto;padding:20px 20px 50px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.benefit{background:white;border:1px solid var(--line);border-radius:10px;padding:15px;display:flex;align-items:center;gap:12px}.benefit-icon{font-size:26px}.benefit strong{display:block;font-size:14px}.benefit small{color:var(--muted);font-size:12px}
+.hero{background:linear-gradient(110deg,#10233f 0%,#1b426c 65%,#274f77 100%);border-radius:14px;overflow:hidden;color:white;display:grid;grid-template-columns:1.1fr .9fr;min-height:265px;margin-bottom:22px}
+.hero-copy{padding:34px 36px;align-self:center}.eyebrow{display:inline-block;color:var(--gold);font-size:11px;font-weight:bold;letter-spacing:2px;border:1px solid #e7b84b88;padding:7px 10px;border-radius:20px}
+.hero h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:17px 0 12px}.hero h1 span{color:var(--gold)}.hero p{color:#dce6f2;line-height:1.6;margin:0 0 20px;max-width:500px;font-size:14px}
+.hero-buttons{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:7px;padding:12px 17px;font-weight:bold;cursor:pointer}.btn-gold{background:var(--gold);color:#17243a}.btn-outline{background:transparent;border:1px solid #ffffff88;color:white}
+.hero-art{min-height:250px;position:relative;display:grid;place-items:center;padding:20px}
+.hero-art img{width:90%;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 15px 35px #06142b66;opacity:.88}
+.hero-label{position:absolute;right:8%;bottom:20px;background:#10233fee;border:1px solid #e7b84b88;border-radius:9px;padding:12px 16px;color:white;font-size:13px;font-weight:bold}.hero-label small{display:block;color:var(--gold);font-weight:normal;margin-top:4px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:28px 0 15px}.section-head h2{font-size:22px;margin:0;color:var(--navy)}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.count{font-size:12px;color:var(--muted)}
+.category-row{display:grid;grid-template-columns:repeat(8,minmax(90px,1fr));gap:10px;margin-bottom:24px}
+.category{background:white;border:1px solid var(--line);border-radius:11px;padding:15px 8px;text-align:center;cursor:pointer;transition:.18s;min-width:0}
+.category:hover,.category.active{border-color:var(--gold);box-shadow:0 4px 14px #17243a10;transform:translateY(-2px)}
+.category .emoji{font-size:28px;display:block;margin-bottom:8px}.category strong{font-size:12px;display:block}
+.product-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}
+.product{background:white;border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:transform .18s,box-shadow .18s;min-width:0}
+.product:hover{transform:translateY(-3px);box-shadow:0 9px 24px #10233f12}
+.product-image{position:relative;background:#e9edf4;aspect-ratio:1/1;overflow:hidden}
+.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}.product:hover .product-image img{transform:scale(1.04)}
+.pill{position:absolute;top:9px;left:9px;background:var(--navy);color:white;border-radius:5px;font-size:9px;letter-spacing:.6px;font-weight:bold;padding:6px 7px}
+.product-info{padding:12px}.product-name{font-size:13px;font-weight:bold;line-height:1.35;min-height:34px}.product-category{font-size:11px;color:var(--muted);margin-top:5px}
+.coming{display:flex;align-items:center;justify-content:center;margin-top:11px;background:#fff7e4;border:1px solid #f0d69b;color:#815d0c;border-radius:6px;padding:8px;font-size:10px;font-weight:900;letter-spacing:1px}
+.empty{grid-column:1/-1;background:white;border:1px dashed #cbd3df;padding:35px;text-align:center;border-radius:12px;color:var(--muted)}
+.info-band{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:20px}.info-band h3{margin:0 0 7px;color:var(--navy)}.info-band p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+footer{background:#0a172a;color:#dbe3ef;padding:30px 20px}.footer-inner{max-width:1300px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font-size:18px;font-weight:900;letter-spacing:1px}.footer-brand span{color:var(--gold)}footer p{font-size:12px;color:#aebbd0;line-height:1.6}footer a{color:var(--gold)}.footer-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:12px}
+@media(max-width:1000px){.category-row{grid-template-columns:repeat(4,minmax(0,1fr))}.product-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.brand{min-width:180px}.brand-name{font-size:19px}.header-main{gap:13px}}
+@media(max-width:700px){.top-strip{font-size:10px}.header-main{padding:12px;gap:10px;flex-wrap:wrap}.brand{min-width:0;flex:1}.logo{width:38px;height:38px;font-size:21px}.brand-name{font-size:18px}.brand-tag{font-size:8px;letter-spacing:1px}.header-action{font-size:11px}.header-action span{font-size:18px}.search{order:3;flex-basis:100%;flex-grow:1}.search input{padding:12px}.search button{padding:0 13px}.nav{padding:0 12px 10px;gap:6px}main{padding:12px 10px 30px}.benefits{gap:7px}.benefit{padding:10px 7px;gap:6px;display:block;text-align:center}.benefit-icon{font-size:21px}.benefit strong{font-size:11px;margin:4px 0}.benefit small{font-size:9px}.hero{grid-template-columns:1fr}.hero-copy{padding:24px 20px 10px}.hero h1{font-size:34px}.hero p{font-size:13px}.hero-art{min-height:175px;padding:12px 20px 20px}.hero-art img{height:155px;width:100%}.hero-label{right:25px;bottom:27px;padding:9px 11px;font-size:11px}.section-head{margin:23px 0 12px}.section-head h2{font-size:19px}.category-row{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.category{padding:12px 4px}.category .emoji{font-size:24px}.category strong{font-size:10px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-info{padding:10px}.product-name{font-size:12px}.info-band{padding:17px;display:block}.info-band .btn{margin-top:12px}}
+@media(min-width:701px) and (max-width:900px){.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style>
 </head>
 <body>
-
-<header>
- <div class="nav-wrap">
-  <a class="brand" href="#home" aria-label="Abhilash Digital Marketing home">
-   <svg class="brand-logo" viewBox="0 0 120 120" role="img" aria-label="Gold digital marketing emblem">
-    <defs><linearGradient id="goldLogo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0b7"/><stop offset=".5" stop-color="#e9bd62"/><stop offset="1" stop-color="#a96d20"/></linearGradient></defs>
-    <path d="M60 4 109 32 109 88 60 116 11 88 11 32Z" fill="none" stroke="url(#goldLogo)" stroke-width="3"/>
-    <path d="M32 80 60 25 88 80H75L60 49 45 80Z" fill="url(#goldLogo)"/>
-    <path d="M43 72H77L82 83H38Z" fill="#fff0b7"/>
-    <circle cx="88" cy="28" r="5" fill="#fff0b7"/>
-    <path d="M87 28 98 18" stroke="#fff0b7" stroke-width="3" stroke-linecap="round"/>
-    <path d="M26 92H94" stroke="url(#goldLogo)" stroke-width="2"/>
-   </svg>
-   <div>
-    <div class="brand-name">ABHILASH <span>DIGITAL MARKETING</span></div>
-    <div class="brand-tag">GROW • CONNECT • SUCCEED</div>
-   </div>
-  </a>
-  <nav>
-   <a href="#home">Home</a><a href="#services">Services</a><a href="#products">Products</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a class="nav-cta" href="#contact">Contact Us</a>
+<div class="top-strip">WELCOME TO VELORA · OUR COLLECTION IS COMING SOON</div>
+<header class="header">
+  <div class="header-main">
+    <a class="brand" href="#" aria-label="Velora home">
+      <div class="logo">V</div>
+      <div><div class="brand-name">VE<span>LORA</span></div><div class="brand-tag">EVERYTHING YOU LOVE</div></div>
+    </a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search by product or category..." aria-label="Search products">
+      <button type="submit">SEARCH</button>
+    </form>
+    <a class="header-action" href="#categories"><span>▦</span>Categories</a>
+    <a class="header-action" href="#products"><span>♡</span>Discover</a>
+  </div>
+  <nav class="nav" id="nav">
+    <button class="active" data-filter="All">All Products</button>
+    <button data-filter="Fashion">Fashion</button><button data-filter="T-Shirts">T-Shirts</button>
+    <button data-filter="Shoes">Shoes</button><button data-filter="Watches">Watches</button>
+    <button data-filter="Toys">Toys</button><button data-filter="Bags">Bags</button>
+    <button data-filter="Mobile Accessories">Mobile Accessories</button><button data-filter="Home Decor">Home Decor</button>
+    <button data-filter="Gifts">Gifts</button>
   </nav>
- </div>
 </header>
-
 <main>
-<section class="hero" id="home">
- <div class="hero-mark">ABHILASH</div>
- <div class="hero-wrap">
-  <div>
-   <div class="eyebrow">YOUR DIGITAL GROWTH PARTNER</div>
-   <h1>Build Your Brand.<span>Go Beyond.</span></h1>
-   <p class="hero-copy">Welcome to Abhilash Digital Marketing — a creative space for digital services, business growth and a new product showcase coming soon.</p>
-   <div class="hero-actions">
-    <a class="btn btn-gold" href="#services">Explore Our Services ↗</a>
-    <a class="btn btn-ghost" href="#products">Discover Products</a>
-   </div>
-   <p class="hero-note">✦ Creative thinking. Digital presence. New possibilities.</p>
-  </div>
-  <div class="hero-visual">
-   <div class="visual-glow"></div>
-   <div class="laptop-scene">
-    <div class="laptop-screen">
-     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" alt="Laptop and workspace" fetchpriority="high">
-     <div class="screen-overlay">
-      <div class="screen-brand">
-       <svg viewBox="0 0 120 120" aria-hidden="true">
-        <path d="M60 4 109 32 109 88 60 116 11 88 11 32Z" fill="none" stroke="#e9bd62" stroke-width="3"/>
-        <path d="M32 80 60 25 88 80H75L60 49 45 80Z" fill="#e9bd62"/>
-        <path d="M43 72H77L82 83H38Z" fill="#fff0b7"/>
-       </svg>
-       <strong>ABHILASH<br>DIGITAL MARKETING</strong>
-       <small>GROW • CONNECT • SUCCEED</small>
-      </div>
-     </div>
+  <section class="benefits" aria-label="Store information">
+    <div class="benefit"><span class="benefit-icon">✦</span><div><strong>Curated Collection</strong><small>Many categories, one place</small></div></div>
+    <div class="benefit"><span class="benefit-icon">◈</span><div><strong>New Styles Coming</strong><small>Our collection is in progress</small></div></div>
+    <div class="benefit"><span class="benefit-icon">✓</span><div><strong>Easy to Explore</strong><small>Browse by category</small></div></div>
+  </section>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">YOUR NEW SHOPPING DESTINATION</span>
+      <h1>Find Your Style.<br><span>Love Every Choice.</span></h1>
+      <p>Explore fashion, gadgets, footwear, gifts and everyday essentials — all in one place. Our online collection is coming soon.</p>
+      <div class="hero-buttons"><button class="btn btn-gold" onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">Explore Categories ↓</button><button class="btn btn-outline" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">View Products</button></div>
     </div>
-    <div class="laptop-base"></div>
-   </div>
-   <div class="float-card"><strong>✦ Coming Soon</strong><small>Our online product collection</small></div>
-  </div>
- </div>
-</section>
-
-<div class="stats">
- <div class="stat"><strong>Creative</strong><span>Digital Solutions</span></div>
- <div class="stat"><strong>Responsive</strong><span>Modern Website Design</span></div>
- <div class="stat"><strong>Coming Soon</strong><span>Product Showcase</span></div>
-</div>
-
-<section class="section section-dark" id="services">
- <div class="section-inner">
-  <div class="section-heading"><div class="kicker">WHAT WE DO</div><h2>Services That Move You Forward</h2><p>Creative digital solutions to help businesses present themselves confidently online.</p></div>
-  <div class="service-grid">
-   <article class="service-card"><div class="service-icon">📱</div><h3>Social Media Marketing</h3><p>Build a recognisable brand presence and connect with your audience.</p></article>
-   <article class="service-card"><div class="service-icon">🎯</div><h3>Digital Advertising</h3><p>Creative promotional concepts for your business and its goals.</p></article>
-   <article class="service-card"><div class="service-icon">💻</div><h3>Website Development</h3><p>Modern, responsive websites for brands, services and projects.</p></article>
-   <article class="service-card"><div class="service-icon">🔎</div><h3>Search Optimisation</h3><p>Improve website content and structure for a better online presence.</p></article>
-   <article class="service-card"><div class="service-icon">🎨</div><h3>Graphic Design</h3><p>Eye-catching creative concepts for websites and social media.</p></article>
-   <article class="service-card"><div class="service-icon">📈</div><h3>Brand Development</h3><p>Present your business with a consistent and professional identity.</p></article>
-  </div>
- </div>
-</section>
-
-<section class="section products" id="products">
- <div class="section-inner">
-  <div class="section-heading"><div class="kicker">THE UPCOMING COLLECTION</div><h2>Explore Our Products</h2><p>Choose a category to explore different styles. Our product showcase is being prepared.</p></div>
-  <div class="filters" id="filters">
-   <button class="filter-btn active" data-filter="all">All Products</button>
-   <button class="filter-btn" data-filter="toys">Toys & Figures</button>
-   <button class="filter-btn" data-filter="tshirts">T-Shirts</button>
-   <button class="filter-btn" data-filter="vests">Vests & Baniyan</button>
-   <button class="filter-btn" data-filter="shirts">Shirts</button>
-   <button class="filter-btn" data-filter="jeans">Jeans & Pants</button>
-   <button class="filter-btn" data-filter="shoes">Shoes & Slippers</button>
-   <button class="filter-btn" data-filter="watches">Watches</button>
-   <button class="filter-btn" data-filter="caps">Caps & Hats</button>
-   <button class="filter-btn" data-filter="bags">Bags</button>
-   <button class="filter-btn" data-filter="mobile">Mobile Accessories</button>
-   <button class="filter-btn" data-filter="home">Home Decor</button>
-   <button class="filter-btn" data-filter="stationery">Stationery</button>
-   <button class="filter-btn" data-filter="gifts">Gift Items</button>
-   <button class="filter-btn" data-filter="ladies">Ladies' Wear</button>
-   <button class="filter-btn" data-filter="other">Other Items</button>
-  </div>
-
-  <div class="product-grid" id="productGrid">
-   <article class="product-card" data-category="toys"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=800&q=80" alt="Toy collection" loading="lazy"><span class="image-label">TOYS</span></div><div class="product-info"><h3>Mini Toy Collection</h3><p>Small toys and playful collectibles.</p><div class="variants"><span>Mini Toys</span><span>Play Sets</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="toys"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=800&q=80" alt="Toy vehicle collection" loading="lazy"><span class="image-label">TOYS</span></div><div class="product-info"><h3>Toy Vehicles</h3><p>Toy cars and vehicle-inspired play items.</p><div class="variants"><span>Cars</span><span>Trucks</span><span>More styles</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="toys"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=800&q=80" alt="Colourful children's toys" loading="lazy"><span class="image-label">TOYS</span></div><div class="product-info"><h3>Fun & Play Toys</h3><p>Colourful toys for playtime and gifting.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="tshirts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Classic T-shirt" loading="lazy"><span class="image-label">T-SHIRTS</span></div><div class="product-info"><h3>Classic T-Shirt</h3><p>A versatile everyday style.</p><div class="variants"><span>Black</span><span>White</span><span>Navy</span><span>S–XXL</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="tshirts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=80" alt="Casual T-shirt style" loading="lazy"><span class="image-label">T-SHIRTS</span></div><div class="product-info"><h3>Casual Fashion T-Shirt</h3><p>Relaxed styles for daily wear.</p><div class="variants"><span>Blue</span><span>White</span><span>Grey</span><span>S–XXL</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="tshirts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80" alt="Black T-shirt" loading="lazy"><span class="image-label">T-SHIRTS</span></div><div class="product-info"><h3>Minimal T-Shirt</h3><p>Simple, clean and easy-to-style looks.</p><div class="variants"><span>Black</span><span>Olive</span><span>Maroon</span><span>S–XXL</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="tshirts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80" alt="Printed casual clothing" loading="lazy"><span class="image-label">T-SHIRTS</span></div><div class="product-info"><h3>Printed T-Shirt Styles</h3><p>Graphic and printed looks for casual outfits.</p><div class="variants"><span>Graphic</span><span>Printed</span><span>Multiple sizes</span></div><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="vests"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80" alt="Basic clothing" loading="lazy"><span class="image-label">INNERWEAR</span></div><div class="product-info"><h3>Classic Baniyan</h3><p>Basic everyday vest styles.</p><div class="variants"><span>White</span><span>Grey</span><span>Multiple sizes</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="vests"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80" alt="Folded basic clothing" loading="lazy"><span class="image-label">INNERWEAR</span></div><div class="product-info"><h3>Everyday Vest Collection</h3><p>Comfort-focused basics for everyday use.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="shirts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80" alt="Casual shirt" loading="lazy"><span class="image-label">SHIRTS</span></div><div class="product-info"><h3>Casual Shirt</h3><p>Relaxed shirts for everyday outfits.</p><div class="variants"><span>Plain</span><span>Checks</span><span>S–XXL</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="shirts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80" alt="Smart shirt style" loading="lazy"><span class="image-label">SHIRTS</span></div><div class="product-info"><h3>Smart Shirt Styles</h3><p>Smart-casual looks for different occasions.</p><div class="variants"><span>Blue</span><span>White</span><span>Checks</span></div><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="jeans"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80" alt="Denim jeans" loading="lazy"><span class="image-label">DENIM</span></div><div class="product-info"><h3>Denim Jeans</h3><p>Classic denim styles for everyday outfits.</p><div class="variants"><span>Blue</span><span>Black</span><span>Multiple sizes</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="jeans"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80" alt="Casual trousers" loading="lazy"><span class="image-label">PANTS</span></div><div class="product-info"><h3>Casual Pants</h3><p>Comfortable casual looks for daily use.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="shoes"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Sports shoes" loading="lazy"><span class="image-label">FOOTWEAR</span></div><div class="product-info"><h3>Sports Shoes</h3><p>Sporty footwear styles for casual activities.</p><div class="variants"><span>Multiple colours</span><span>Multiple sizes</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="shoes"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80" alt="Casual footwear" loading="lazy"><span class="image-label">FOOTWEAR</span></div><div class="product-info"><h3>Casual Shoes</h3><p>Easy-to-style footwear for everyday use.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="shoes"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=800&q=80" alt="Casual sandals" loading="lazy"><span class="image-label">SLIPPERS</span></div><div class="product-info"><h3>Slippers & Sandals</h3><p>Simple footwear styles for daily comfort.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="watches"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Classic wristwatch" loading="lazy"><span class="image-label">WATCHES</span></div><div class="product-info"><h3>Classic Watches</h3><p>Timeless designs and everyday accessories.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="watches"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80" alt="Watch collection" loading="lazy"><span class="image-label">WATCHES</span></div><div class="product-info"><h3>Modern Watch Styles</h3><p>Modern looks for a variety of occasions.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="caps"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80" alt="Cap" loading="lazy"><span class="image-label">CAPS</span></div><div class="product-info"><h3>Everyday Caps</h3><p>Casual headwear in versatile styles.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="caps"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80" alt="Fashion cap" loading="lazy"><span class="image-label">CAPS</span></div><div class="product-info"><h3>Street Style Caps</h3><p>Sport-inspired and streetwear looks.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="bags"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Backpack" loading="lazy"><span class="image-label">BAGS</span></div><div class="product-info"><h3>Everyday Backpack</h3><p>Backpacks for daily essentials.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="bags"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=800&q=80" alt="Travel bag" loading="lazy"><span class="image-label">BAGS</span></div><div class="product-info"><h3>Travel & School Bags</h3><p>Useful bag styles for school and travel.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="mobile"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=800&q=80" alt="Mobile phone accessories" loading="lazy"><span class="image-label">MOBILE</span></div><div class="product-info"><h3>Mobile Covers</h3><p>Phone cover styles for different looks.</p><div class="variants"><span>Clear</span><span>Colourful</span><span>Patterned</span></div><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="mobile"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Personal electronic accessories" loading="lazy"><span class="image-label">ACCESSORIES</span></div><div class="product-info"><h3>Everyday Accessories</h3><p>Useful electronic and mobile accessories.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="home"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Modern home interior" loading="lazy"><span class="image-label">HOME</span></div><div class="product-info"><h3>Home Decor</h3><p>Decor ideas and stylish home accents.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="home"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=800&q=80" alt="Decorative home objects" loading="lazy"><span class="image-label">DECOR</span></div><div class="product-info"><h3>Decorative Accessories</h3><p>Small decorative accents for your space.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="stationery"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Writing stationery" loading="lazy"><span class="image-label">STATIONERY</span></div><div class="product-info"><h3>Notebooks & Writing</h3><p>Writing supplies for study and everyday work.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="stationery"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80" alt="Notebook" loading="lazy"><span class="image-label">STATIONERY</span></div><div class="product-info"><h3>Notebooks & Journals</h3><p>Useful notebooks and planning essentials.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="gifts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=800&q=80" alt="Gift wrapping" loading="lazy"><span class="image-label">GIFTS</span></div><div class="product-info"><h3>Gift Collection</h3><p>Gift ideas for celebrations and special days.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="gifts"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" alt="Gift box" loading="lazy"><span class="image-label">GIFTS</span></div><div class="product-info"><h3>Gift Boxes</h3><p>Thoughtful gift presentation ideas.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="ladies"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Fashion clothing" loading="lazy"><span class="image-label">FASHION</span></div><div class="product-info"><h3>Ladies' Fashion</h3><p>Fashion and clothing styles planned for the collection.</p><span class="coming">COMING SOON</span></div></article>
-   <article class="product-card" data-category="ladies"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Clothing collection" loading="lazy"><span class="image-label">FASHION</span></div><div class="product-info"><h3>Dress & Outfit Styles</h3><p>Different outfit inspirations for future display.</p><span class="coming">COMING SOON</span></div></article>
-
-   <article class="product-card" data-category="other"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" alt="Lifestyle accessories" loading="lazy"><span class="image-label">MORE</span></div><div class="product-info"><h3>Other Accessories</h3><p>More everyday items will be added in future updates.</p><span class="coming">COMING SOON</span></div></article>
-  </div>
-  <div class="product-notice"><strong>✦ COMING SOON ✦</strong><br>These images are illustrative category previews, not verified inventory. Shopping, ordering and payments are not available yet. Official marketplace links can be added later.</div>
- </div>
-</section>
-
-<section class="section section-dark" id="about">
- <div class="section-inner about-layout">
-  <div class="about-art">
-   <div>
-    <svg viewBox="0 0 120 120" aria-label="Gold brand emblem">
-     <path d="M60 4 109 32 109 88 60 116 11 88 11 32Z" fill="none" stroke="#e9bd62" stroke-width="3"/>
-     <path d="M32 80 60 25 88 80H75L60 49 45 80Z" fill="#e9bd62"/>
-     <path d="M43 72H77L82 83H38Z" fill="#fff0b7"/>
-    </svg>
-    <strong>ABHILASH DIGITAL MARKETING</strong>
-    <small>GROW • CONNECT • SUCCEED</small>
-   </div>
-  </div>
-  <div class="about-copy">
-   <div class="kicker">WHO WE ARE</div>
-   <h2>Ideas That Create <span>Possibilities.</span></h2>
-   <p>Abhilash Digital Marketing is building a creative online presence for digital services, business promotion and a future product showcase.</p>
-   <p>We want visitors to explore the website easily on mobile phones, tablets, laptops and desktop screens.</p>
-   <p>Our product categories are under development. Every item currently displays a Coming Soon label.</p>
-  </div>
- </div>
-</section>
-
-<section class="section section-light">
- <div class="section-inner">
-  <div class="section-heading"><div class="kicker">OUR APPROACH</div><h2>Designed With Purpose</h2><p>A professional presentation with a focus on clarity, creativity and usability.</p></div>
-  <div class="feature-grid">
-   <article class="feature-card"><div class="service-icon">✨</div><h3>Premium Design</h3><p>A distinctive navy and gold visual identity.</p></article>
-   <article class="feature-card"><div class="service-icon">📱</div><h3>Responsive Layout</h3><p>Designed to adapt to different screen sizes.</p></article>
-   <article class="feature-card"><div class="service-icon">🛍️</div><h3>Category Browsing</h3><p>Explore multiple product previews by category.</p></article>
-  </div>
- </div>
-</section>
-
-<section class="section section-dark" id="portfolio">
- <div class="section-inner">
-  <div class="section-heading"><div class="kicker">WHAT WE'RE BUILDING</div><h2>Our Showcase</h2><p>A look at the areas featured on our website.</p></div>
-  <div class="project-grid">
-   <article class="project-card"><h3>Digital Services</h3><p>Online presence, marketing ideas and website solutions.</p></article>
-   <article class="project-card"><h3>Product Categories</h3><p>Fashion, accessories, toys, gifts and more — Coming Soon.</p></article>
-   <article class="project-card"><h3>Future Updates</h3><p>New categories and details will be introduced as they become available.</p></article>
-  </div>
- </div>
-</section>
-
-<section class="section contact" id="contact">
- <div class="section-inner">
-  <div class="section-heading"><div class="kicker">LET'S CONNECT</div><h2>Contact Us</h2><p>Reach out with questions about our digital services.</p></div>
-  <div class="contact-grid">
-   <div class="contact-card"><h3>Business Information</h3>
-    <p><strong>Business:</strong> Abhilash Digital Marketing</p>
-    <p><strong>Email:</strong> <a href="mailto:abhilashdigitalmarketing809@gmail.com">abhilashdigitalmarketing809@gmail.com</a></p>
-    <p><strong>Location:</strong> Raipur, Chhattisgarh, India</p>
-    <p><strong>YouTube:</strong> <a href="https://youtube.com/@abhilashdigitalmarketing" target="_blank" rel="noopener noreferrer">Visit our channel ↗</a></p>
-   </div>
-   <div class="contact-card"><h3>Get In Touch</h3><p>For enquiries about our digital services, email us directly.</p><a class="btn btn-gold" href="mailto:abhilashdigitalmarketing809@gmail.com?subject=Website%20Enquiry">Send an Email ↗</a><p style="font-size:12px;margin-top:18px">Product shopping and payments are not available yet.</p></div>
-  </div>
- </div>
-</section>
+    <div class="hero-art">
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85" alt="Modern fashion store">
+      <div class="hero-label">VELORA COLLECTION<small>COMING SOON</small></div>
+    </div>
+  </section>
+  <section id="categories">
+    <div class="section-head"><div><h2>Shop by Category</h2><p>Choose a category to explore the collection</p></div></div>
+    <div class="category-row" id="categoryRow">
+      <button class="category active" data-filter="All"><span class="emoji">▦</span><strong>All Products</strong></button>
+      <button class="category" data-filter="T-Shirts"><span class="emoji">👕</span><strong>T-Shirts</strong></button>
+      <button class="category" data-filter="Fashion"><span class="emoji">👔</span><strong>Shirts & Wear</strong></button>
+      <button class="category" data-filter="Shoes"><span class="emoji">👟</span><strong>Shoes</strong></button>
+      <button class="category" data-filter="Watches"><span class="emoji">⌚</span><strong>Watches</strong></button>
+      <button class="category" data-filter="Toys"><span class="emoji">🧸</span><strong>Toys</strong></button>
+      <button class="category" data-filter="Bags"><span class="emoji">🎒</span><strong>Bags</strong></button>
+      <button class="category" data-filter="Mobile Accessories"><span class="emoji">📱</span><strong>Mobile</strong></button>
+      <button class="category" data-filter="Home Decor"><span class="emoji">🏠</span><strong>Home Decor</strong></button>
+      <button class="category" data-filter="Gifts"><span class="emoji">🎁</span><strong>Gifts</strong></button>
+      <button class="category" data-filter="Beauty"><span class="emoji">🧴</span><strong>Beauty</strong></button>
+      <button class="category" data-filter="Stationery"><span class="emoji">📚</span><strong>Stationery</strong></button>
+    </div>
+  </section>
+  <section id="products">
+    <div class="section-head"><div><h2 id="productHeading">Trending Picks</h2><p>Preview collection · Shopping will be available soon</p></div><div class="count" id="productCount">Products</div></div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+  <section class="info-band">
+    <div><h3>A new way to discover your favourites.</h3><p>VELORA is getting ready. Browse our preview collection now; products are for display only and orders are not enabled yet.</p></div>
+    <a class="btn btn-gold" href="#categories">Browse Categories</a>
+  </section>
 </main>
-
 <footer>
- <div class="footer-brand">
-  <svg class="brand-logo" viewBox="0 0 120 120" role="img" aria-label="Gold digital marketing emblem">
-   <path d="M60 4 109 32 109 88 60 116 11 88 11 32Z" fill="none" stroke="#e9bd62" stroke-width="3"/>
-   <path d="M32 80 60 25 88 80H75L60 49 45 80Z" fill="#e9bd62"/>
-   <path d="M43 72H77L82 83H38Z" fill="#fff0b7"/>
-  </svg>
-  <div><div class="brand-name">ABHILASH <span>DIGITAL MARKETING</span></div><div class="brand-tag">GROW • CONNECT • SUCCEED</div></div>
- </div>
- <p>© <span id="year"></span> Abhilash Digital Marketing. All rights reserved.</p>
- <p>Product showcase only • All products are Coming Soon</p>
+  <div class="footer-inner">
+    <div><div class="footer-brand">VE<span>LORA</span></div><p>Everything You Love, All in One Place.<br>Independent shopping brand · Launching soon.</p></div>
+    <div class="footer-links"><a href="#categories">Categories</a><a href="#products">Products</a><a href="mailto:abhilashdigitalmarketing809@gmail.com">Contact</a></div>
+    <p>© <span id="year"></span> VELORA. All rights reserved.</p>
+  </div>
 </footer>
-
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-
-const filterButtons = document.querySelectorAll(".filter-btn");
-const productCards = document.querySelectorAll(".product-card");
-
-filterButtons.forEach(function(button){
-  button.addEventListener("click",function(){
-    const category = button.dataset.filter;
-    filterButtons.forEach(function(btn){btn.classList.remove("active");});
-    button.classList.add("active");
-
-    productCards.forEach(function(card){
-      card.hidden = category !== "all" && card.dataset.category !== category;
-    });
-
-    document.getElementById("products").scrollIntoView({behavior:"smooth",block:"start"});
-  });
-});
+const products = [
+ {name:"Classic Everyday T-Shirt",cat:"T-Shirts",img:"photo-1521572163474-6864f9cf17ab"},
+ {name:"Premium Black T-Shirt",cat:"T-Shirts",img:"photo-1503341504253-dff4815485f1"},
+ {name:"Casual White T-Shirt",cat:"T-Shirts",img:"photo-1523381210434-271e8be1f52b"},
+ {name:"Printed Style T-Shirt",cat:"T-Shirts",img:"photo-1503342217505-b0a15ec3261c"},
+ {name:"Casual Check Shirt",cat:"Fashion",img:"photo-1596755094514-f87e34085b2c"},
+ {name:"Classic Formal Shirt",cat:"Fashion",img:"photo-1602810318383-e386cc2a3ccf"},
+ {name:"Casual Denim Jeans",cat:"Fashion",img:"photo-1542272604-787c3835535d"},
+ {name:"Everyday Casual Wear",cat:"Fashion",img:"photo-1515886657613-9f3515b0c78f"},
+ {name:"Sporty Running Shoes",cat:"Shoes",img:"photo-1542291026-7eec264c27ff"},
+ {name:"Classic White Sneakers",cat:"Shoes",img:"photo-1495555961986-6d4c1ecb7be3"},
+ {name:"Everyday Casual Shoes",cat:"Shoes",img:"photo-1549298916-b41d501d3772"},
+ {name:"Modern Wrist Watch",cat:"Watches",img:"photo-1524592094714-0f0654e20314"},
+ {name:"Classic Watch Style",cat:"Watches",img:"photo-1524805444758-089113d48a6d"},
+ {name:"Cute Teddy Bear",cat:"Toys",img:"photo-1559454403-b8fb88521f11"},
+ {name:"Colourful Toy Collection",cat:"Toys",img:"photo-1566576912321-d58ddd7a6088"},
+ {name:"School Backpack",cat:"Bags",img:"photo-1553062407-98eeb64c6a62"},
+ {name:"Everyday Shoulder Bag",cat:"Bags",img:"photo-1548036328-c9fa89d128fa"},
+ {name:"Protective Phone Case",cat:"Mobile Accessories",img:"photo-1601593346740-925612772716"},
+ {name:"Wireless Earbuds",cat:"Mobile Accessories",img:"photo-1606220945770-b5b6c2c55bf1"},
+ {name:"Home Decor Accent",cat:"Home Decor",img:"photo-1600210492486-724fe5c67fb0"},
+ {name:"Decorative Table Piece",cat:"Home Decor",img:"photo-1490312278390-ab64016e0aa9"},
+ {name:"Gift Box Inspiration",cat:"Gifts",img:"photo-1549465220-1a8b9238cd48"},
+ {name:"Gift for Someone Special",cat:"Gifts",img:"photo-1513201099705-a9746e1e201f"},
+ {name:"Beauty & Care Essentials",cat:"Beauty",img:"photo-1608248543803-ba4f8c70ae0b"},
+ {name:"Daily Care Collection",cat:"Beauty",img:"photo-1556229010-6c3f2c9ca5f8"},
+ {name:"Notebook & Stationery",cat:"Stationery",img:"photo-1531346878377-a5be20888e57"},
+ {name:"Creative Desk Supplies",cat:"Stationery",img:"photo-1455390582262-044cdele277a"},
+ {name:"Comfort Vest & Basics",cat:"Fashion",img:"photo-1618354691373-d851c5c3a990"},
+ {name:"Fashion Cap",cat:"Fashion",img:"photo-1588850561407-ed78c282e89b"},
+ {name:"Ladies Fashion Style",cat:"Fashion",img:"photo-1483985988355-763728e1935b"}
+];
+const grid=document.getElementById('productGrid');
+const searchInput=document.getElementById('searchInput');
+let currentFilter='All';
+function imageUrl(id){return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=600&q=80`}
+function render(){
+ const query=searchInput.value.trim().toLowerCase();
+ const filtered=products.filter(p=>(currentFilter==='All'||(currentFilter==='Fashion' ? p.cat==='Fashion'||p.cat==='T-Shirts' : p.cat===currentFilter)) && (!query||(p.name+' '+p.cat).toLowerCase().includes(query)));
+ document.getElementById('productHeading').textContent=query?'Search Results':currentFilter==='All'?'Trending Picks':currentFilter;
+ document.getElementById('productCount').textContent=filtered.length+' items';
+ grid.innerHTML='';
+ if(!filtered.length){grid.innerHTML='<div class="empty">No matching products found. Try another search or category.</div>';return}
+ filtered.forEach(p=>{
+  const card=document.createElement('article');card.className='product';
+  card.innerHTML=`<div class="product-image"><img loading="lazy" src="${imageUrl(p.img)}" alt="${p.name}" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#e9edf4,#cbd5e1)'"><span class="pill">PREVIEW</span></div><div class="product-info"><div class="product-name">${p.name}</div><div class="product-category">${p.cat}</div><div class="coming">COMING SOON</div></div>`;
+  grid.appendChild(card);
+ });
+ document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter===currentFilter));
+}
+function setFilter(filter){currentFilter=filter;searchInput.value='';render();document.getElementById('products').scrollIntoView({behavior:'smooth',block:'start'})}
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();currentFilter='All';render();document.getElementById('products').scrollIntoView({behavior:'smooth'})});
+searchInput.addEventListener('input',()=>{currentFilter='All';render()});
+document.getElementById('year').textContent=new Date().getFullYear();
+render();
 </script>
 </body>
 </html>
